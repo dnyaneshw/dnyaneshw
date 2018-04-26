@@ -1,0 +1,8 @@
+C:\InsuranceProject\Canada\SourceCode\Insurance\bin\Insurance.dll.config
+C:\InsuranceProject\Canada\SourceCode\Insurance\bin\Insurance.dll
+C:\InsuranceProject\Canada\SourceCode\Insurance\bin\Insurance.pdb
+C:\InsuranceProject\Canada\SourceCode\Insurance\bin\Microsoft.Web.Infrastructure.dll
+C:\InsuranceProject\Canada\SourceCode\Insurance\bin\Microsoft.Web.Infrastructure.xml
+C:\InsuranceProject\Canada\SourceCode\Insurance\obj\Release\Insurance.dll
+C:\InsuranceProject\Canada\SourceCode\Insurance\obj\Release\Insurance.pdb
+C:\InsuranceProject\Canada\SourceCode\Insurance\obj\Release\Insurance.csprojResolveAssemblyReference.cache

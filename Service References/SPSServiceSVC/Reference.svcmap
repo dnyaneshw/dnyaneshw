@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="a3b90ddd-a38a-431e-a046-bf53ffff0a31" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="https://protectpay.propay.com/API/SPS.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="SPS3.wsdl" MetadataType="Wsdl" ID="ce2c298b-0f4a-4af9-b1ea-da48097c8a48" SourceId="1" SourceUrl="http://protectpay.propay.com/API/sps.svc?wsdl" />
+    <MetadataFile FileName="sps12.xsd" MetadataType="Schema" ID="1e831d72-3947-4da8-9133-2bffe13a7938" SourceId="1" SourceUrl="http://protectpay.propay.com/API/sps.svc?xsd=xsd4" />
+    <MetadataFile FileName="sps121.xsd" MetadataType="Schema" ID="5c483518-b091-49b0-af0a-2d0d3532b1b2" SourceId="1" SourceUrl="http://protectpay.propay.com/API/sps.svc?xsd=xsd5" />
+    <MetadataFile FileName="sps122.xsd" MetadataType="Schema" ID="cba383dc-db31-47e0-91c9-80b094d4c7bc" SourceId="1" SourceUrl="http://protectpay.propay.com/API/sps.svc?xsd=xsd11" />
+    <MetadataFile FileName="sps123.xsd" MetadataType="Schema" ID="67a45a87-b175-4e77-8190-c1090333aac0" SourceId="1" SourceUrl="http://protectpay.propay.com/API/sps.svc?xsd=xsd7" />
+    <MetadataFile FileName="sps124.xsd" MetadataType="Schema" ID="bacdfaa8-29c7-43a5-9299-fe6b9e24faa6" SourceId="1" SourceUrl="http://protectpay.propay.com/API/sps.svc?xsd=xsd8" />
+    <MetadataFile FileName="sps125.xsd" MetadataType="Schema" ID="6bdf42c7-2ad2-4df0-bb2e-4e5862b1c167" SourceId="1" SourceUrl="http://protectpay.propay.com/API/sps.svc?xsd=xsd9" />
+    <MetadataFile FileName="sps126.xsd" MetadataType="Schema" ID="25fc8ff3-fc47-4d69-adcb-d679b1653498" SourceId="1" SourceUrl="http://protectpay.propay.com/API/sps.svc?xsd=xsd3" />
+    <MetadataFile FileName="sps127.xsd" MetadataType="Schema" ID="23909511-2376-4790-b7f4-3b66458c9e1f" SourceId="1" SourceUrl="http://protectpay.propay.com/API/sps.svc?xsd=xsd12" />
+    <MetadataFile FileName="sps128.xsd" MetadataType="Schema" ID="52df7445-d79b-44fb-8969-11d8a9103a89" SourceId="1" SourceUrl="http://protectpay.propay.com/API/sps.svc?xsd=xsd6" />
+    <MetadataFile FileName="sps129.xsd" MetadataType="Schema" ID="e3d4ac2e-fa3d-4772-b931-e53b82382d80" SourceId="1" SourceUrl="http://protectpay.propay.com/API/sps.svc?xsd=xsd13" />
+    <MetadataFile FileName="sps1.disco" MetadataType="Disco" ID="8b8bc954-46b5-449b-9311-7f913a5b9e44" SourceId="1" SourceUrl="http://protectpay.propay.com/API/sps.svc?disco" />
+    <MetadataFile FileName="sps31.wsdl" MetadataType="Wsdl" ID="a229dde9-2576-44c7-9851-3b0352ac9b4e" SourceId="1" SourceUrl="http://protectpay.propay.com/API/sps.svc?wsdl=wsdl1" />
+    <MetadataFile FileName="sps1210.xsd" MetadataType="Schema" ID="842bd1b2-0998-46b6-8aa9-ebb8e357f4e0" SourceId="1" SourceUrl="http://protectpay.propay.com/API/sps.svc?xsd=xsd10" />
+    <MetadataFile FileName="sps32.wsdl" MetadataType="Wsdl" ID="25f2c097-8663-4d5a-b6cb-621337b449b8" SourceId="1" SourceUrl="http://protectpay.propay.com/API/sps.svc?wsdl=wsdl0" />
+    <MetadataFile FileName="sps1211.xsd" MetadataType="Schema" ID="1f3206b0-7d1a-464a-b6ef-cca20cbdfb65" SourceId="1" SourceUrl="http://protectpay.propay.com/API/sps.svc?xsd=xsd0" />
+    <MetadataFile FileName="sps1212.xsd" MetadataType="Schema" ID="47e982e9-f2d4-42a2-b30c-68a41756447b" SourceId="1" SourceUrl="http://protectpay.propay.com/API/sps.svc?xsd=xsd1" />
+    <MetadataFile FileName="sps1213.xsd" MetadataType="Schema" ID="eda15de9-4ad2-485b-ab5a-e7f5b22b9f82" SourceId="1" SourceUrl="http://protectpay.propay.com/API/sps.svc?xsd=xsd2" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

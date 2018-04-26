@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/Propay.Contracts.SPS.External.SPSServiceData" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Propay.Contracts.SPS.External.SPSServiceData" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://protectpay.propay.com/API/sps.svc?xsd=xsd2" namespace="http://propay.com/SPS/types" />
+  <xs:import schemaLocation="http://protectpay.propay.com/API/sps.svc?xsd=xsd11" namespace="http://schemas.datacontract.org/2004/07/Propay.Common.Enums.ISO" />
+  <xs:import schemaLocation="http://protectpay.propay.com/API/sps.svc?xsd=xsd9" namespace="http://schemas.datacontract.org/2004/07/Propay.Contracts.FraudDetection" />
+  <xs:import schemaLocation="http://protectpay.propay.com/API/sps.svc?xsd=xsd13" namespace="http://schemas.datacontract.org/2004/07/Propay.Contracts.Common.ExternalPaymentMethods" />
+  <xs:import schemaLocation="http://protectpay.propay.com/API/sps.svc?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/Propay.Contracts.SPS.External" />
+  <xs:complexType name="AutoUpdatePaymentMethodRequest">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AutoUpdaterAccountId" type="xs:long" />
+      <xs:element minOccurs="0" name="CreateNewPaymentMethodOnUpdate" type="xs:boolean" />
+      <xs:element minOccurs="0" name="PaymentMethodId" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="AutoUpdatePaymentMethodRequest" nillable="true" type="tns:AutoUpdatePaymentMethodRequest" />
+  <xs:complexType name="AutoUpdatePaymentMethodResult">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="RequestId" type="xs:long" />
+      <xs:element xmlns:q1="http://propay.com/SPS/types" minOccurs="0" name="Result" nillable="true" type="q1:Result" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="AutoUpdatePaymentMethodResult" nillable="true" type="tns:AutoUpdatePaymentMethodResult" />
+  <xs:complexType name="ExternalPaymentMethodTransaction">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Amount" type="xs:int" />
+      <xs:element minOccurs="0" name="Comment1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Comment2" nillable="true" type="xs:string" />
+      <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/Propay.Common.Enums.ISO" minOccurs="0" name="CurrencyCode" type="q2:ISOCurrencyCode" />
+      <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/Propay.Contracts.FraudDetection" minOccurs="0" name="FraudDetector" nillable="true" type="q3:FraudDetector" />
+      <xs:element minOccurs="0" name="Invoice" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MerchantProfileId" type="xs:long" />
+      <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/Propay.Contracts.Common.ExternalPaymentMethods" minOccurs="0" name="PaymentMethodLookup" nillable="true" type="q4:PaymentMethodLookup" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ExternalPaymentMethodTransaction" nillable="true" type="tns:ExternalPaymentMethodTransaction" />
+  <xs:complexType name="ExternalPaymentMethodSplitPayTransaction">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ExternalPaymentMethodTransaction">
+        <xs:sequence>
+          <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/Propay.Contracts.SPS.External" minOccurs="0" name="SecondaryTransaction" nillable="true" type="q5:PropayAccountTransaction" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ExternalPaymentMethodSplitPayTransaction" nillable="true" type="tns:ExternalPaymentMethodSplitPayTransaction" />
+</xs:schema>

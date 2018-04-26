@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/Propay.Contracts.FraudDetection.Providers" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Propay.Contracts.FraudDetection.Providers" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://protectpay.propay.com/API/sps.svc?xsd=xsd9" namespace="http://schemas.datacontract.org/2004/07/Propay.Contracts.FraudDetection" />
+  <xs:complexType name="ThreatMetrixFraudDetection">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q1="http://schemas.datacontract.org/2004/07/Propay.Contracts.FraudDetection" base="q1:FraudDetector">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ACHAccountHash" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ConditionalAttribute1" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ConditionalAttribute10" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ConditionalAttribute11" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ConditionalAttribute12" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ConditionalAttribute13" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ConditionalAttribute14" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ConditionalAttribute15" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ConditionalAttribute16" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ConditionalAttribute17" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ConditionalAttribute18" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ConditionalAttribute19" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ConditionalAttribute2" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ConditionalAttribute20" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ConditionalAttribute3" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ConditionalAttribute4" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ConditionalAttribute5" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ConditionalAttribute6" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ConditionalAttribute7" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ConditionalAttribute8" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ConditionalAttribute9" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CreditCardNumberHash" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CustomAttribute1" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CustomAttribute10" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CustomAttribute2" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CustomAttribute3" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CustomAttribute4" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CustomAttribute5" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CustomAttribute6" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CustomAttribute7" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CustomAttribute8" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CustomAttribute9" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="DriversLicenseHash" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="InputIpAddress" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="SessionId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ShippingAddress1" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ShippingAddress2" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ShippingCity" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ShippingCountry" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ShippingState" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ShippingZip" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="SocialSecurityNumberHash" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ThreatMetrixFraudDetection" nillable="true" type="tns:ThreatMetrixFraudDetection" />
+</xs:schema>
